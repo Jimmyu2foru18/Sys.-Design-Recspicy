@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const introOverlay = document.getElementById('intro-overlay');
     const logoImage = document.getElementById('intro-logo');
+    
     setTimeout(() => {
         logoImage.classList.add('visible');
     }, 500);
@@ -14,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
             introOverlay.style.display = 'none';
         }, 1000);
     });
-
 
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => 
