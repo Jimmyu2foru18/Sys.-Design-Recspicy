@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const router = express.Router();
 const { 
@@ -18,3 +19,25 @@ router.put('/profile', protect, upload.avatar.single('avatar'), updateUserProfil
 router.get('/favorites', protect, getUserFavorites);
 
 module.exports = router;
+=======
+const express = require('express');
+const router = express.Router();
+const { 
+    registerUser, 
+    loginUser, 
+    getUserProfile, 
+    updateUserProfile, 
+    getUserFavorites 
+} = require('../controllers/userController');
+const { protect } = require('../middleware/authMiddleware');
+const upload = require('../middleware/upload');
+
+router.post('/register', registerUser);
+router.post('/login', loginUser);
+
+router.get('/profile', protect, getUserProfile);
+router.put('/profile', protect, upload.avatar.single('avatar'), updateUserProfile);
+router.get('/favorites', protect, getUserFavorites);
+
+module.exports = router; 
+>>>>>>> 088e4bc57b5299788084a8bd1b5330d0213972cb

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 API's
 https://publicapi.dev/tasty-api
+=======
+API's
+https://publicapi.dev/tasty-api
+>>>>>>> 088e4bc57b5299788084a8bd1b5330d0213972cb
 https://platform.fatsecret.com/api-editions
